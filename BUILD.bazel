@@ -1,0 +1,28 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "swephgo",
+    srcs = [
+        "cgo_helpers.go",
+        "cgo_helpers.h",
+        "const.go",
+        "doc.go",
+        "sweodef.h",
+        "sweph.h",
+        "swephexp.h",
+        "swephgo.go",
+        "types.go",
+    ],
+    cgo = True,
+    clinkopts = ["-lswe"],
+    copts = ["-I."],
+    importpath = "github.com/mshafiee/swephgo",
+    visibility = ["//visibility:public"],
+    cdeps = ["//third_party/swisseph:swe_foreign"],
+)
+
+alias(
+    name = "go_default_library",
+    actual = ":swephgo",
+    visibility = ["//visibility:public"],
+)
