@@ -19,6 +19,12 @@ go_library(
     importpath = "github.com/mshafiee/swephgo",
     visibility = ["//visibility:public"],
     cdeps = ["//third_party/swisseph:swe_foreign"],
+    tags = [
+        "netgo",
+        "osusergo",
+        "static",
+    ],
+
 )
 
 alias(
