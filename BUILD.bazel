@@ -16,20 +16,12 @@ go_library(
     cdeps = ["//third_party/swisseph:swe_foreign"],
     cgo = True,
     clinkopts = ["-lswe"],
-    copts = ["-I."],
-    importpath = "github.com/mshafiee/swephgo",
-    visibility = ["//visibility:public"],
-    cdeps = ["//third_party/swisseph:swe_foreign"],
+    copts = ["-Ithird_party/swephgo"],
+    importpath = "github.com/yggdrasildev/seer/third_party/swephgo",
     tags = [
         "netgo",
         "osusergo",
         "static",
     ],
-
-)
-
-alias(
-    name = "go_default_library",
-    actual = ":swephgo",
     visibility = ["//visibility:public"],
 )
