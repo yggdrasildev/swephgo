@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/mshafiee/swephgo"
+
+	"github.com/yggdrasildev/seer/third_party/swephgo"
 )
 
 func main() {

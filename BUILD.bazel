@@ -13,6 +13,7 @@ go_library(
         "swephgo.go",
         "types.go",
     ],
+    cdeps = ["//third_party/swisseph:swe_foreign"],
     cgo = True,
     clinkopts = ["-lswe"],
     copts = ["-I."],
