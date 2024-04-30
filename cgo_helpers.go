@@ -16,7 +16,6 @@ package swephgo
 
 /*
 #cgo CFLAGS: -I.
-#cgo LDFLAGS: -lswe
 #include "swephexp.h"
 #include "sweph.h"
 #include <stdlib.h>
