@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/yggdrasildev/seer/third_party/swephgo"
+	"yggdrasildev.io/third_party/swephgo"
 )
 
 func main() {

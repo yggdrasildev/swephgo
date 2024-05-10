@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "sample_lib",
     srcs = ["main.go"],
-    importpath = "github.com/yggdrasildev/seer/third_party/swephgo/sample",
+    importpath = "yggdrasildev.io/third_party/swephgo/sample",
     visibility = ["//visibility:private"],
     deps = ["//third_party/swephgo"],
 )

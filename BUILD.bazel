@@ -16,7 +16,7 @@ go_library(
     cdeps = ["//third_party/swisseph:swe_foreign"],
     cgo = True,
     copts = ["-Ithird_party/swephgo"],
-    importpath = "github.com/yggdrasildev/seer/third_party/swephgo",
+    importpath = "yggdrasildev.io/third_party/swephgo",
     tags = [
         "netgo",
         "osusergo",
